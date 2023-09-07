@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Huiswerk les 25</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var naam = $("#idNaam").val();
+        var stad = $("#idStad").val();
+        var studie = $("#idStudie").val();
+        window.alert("Ik ben " + naam + " en ik woon in " + stad + " en studeer " + studie);
+        });
+        });
+        </script>
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $("#verberg").click(function() {
+        $("#idForm").hide();
+        });
+        $("#toon").click(function() {
+        $("#idForm").show();
+        });
+        });
+        </script>
+
+
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+        </script>
+        <link rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+        <script type="text/javascript">
+        $(function() {
+        $("#accordion").accordion();
+        });
+        </script>
+    </head>
+    <body>
+        <h3>Welkom</h3>
+        <p>Met de knoppen kunt u het formulier hieronder tonen en verbergen.</p>
+        <button id="verberg">Verberg</button>
+        <button id="toon">Toon</button>
+        <br>
+        <br>
+        <form id="idForm">
+            Naam <input type="text" id="idNaam">
+            Woonplaats <input type="text" id="idStad">
+            Studie <input type="text" id="idStudie">
+            <input id="knop" name="knop" type="button"
+            value="Klik op deze knop">
+        </form>
+
+        <br>
+        <hr>
+
+        <div id="accordion">
+            <h3>Naam</h3>
+            <div>
+            <p>Hoe kan ik hier de input van hierboven laten zien?</p>
+            </div>
+            <h3>Woonplaats</h3>
+            <div>
+            <p>Output idStad 2</p>
+            </div>
+            <h3>Studie</h3>
+            <div>
+            <p>Output idStudie</p>
+            </div>
+            </div>
+        </div>
+        <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+    </body>
+</html>
+
+
